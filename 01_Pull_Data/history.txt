@@ -1,0 +1,25 @@
+'''
+Pull Games from Chess.com
+JD Linares
+2025 02 07
+'''
+
+import readline
+import requests
+data = requests.get("https://api.chess.com/pub/player/Shiba_dad")
+print(data)
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+}
+data = requests.get("https://api.chess.com/pub/player/Shiba_dad",headers=headers)
+print(data)
+print(data.json())
+url="https://api.chess.com/pub/player/Shiba_dad/games/2025/01"
+data = requests.get(url,headers=headers)
+data
+data_j = data.json()
+len(data_j)
+len(data_j[0])
+print(data_j)
+readline.writehistory("history.txt")
+readline.write_history_file("history.txt")
