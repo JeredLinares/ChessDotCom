@@ -11,8 +11,15 @@ Assumes only playing "rapid"
 ## Basic Metrics
 - Number of Games
 - Percent played as white
+- Percent wins as white
+- Percent Wins as black 
 - Top 3 opening moves as white
 - Top 3 opening moves as black
 
 ## Advanced Metrics
+- 
+
+
+
+
 
